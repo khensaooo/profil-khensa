@@ -1,0 +1,156 @@
+:root {
+  --primary: #b6895b;
+  --bg: #719fc2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: #fff;
+}
+
+/* === Navbar === */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: rgba(1, 1, 1, 0.8);
+  border-bottom: 1px solid #654c32;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  font-style: italic;
+}
+
+.navbar .navbar-logo span {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a {
+  color: #fff;
+  font-size: 1.4rem;
+  margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(1);
+}
+
+.navbar .navbar-extra a {
+  color: #fff;
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+  color: var(--primary);
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+/* === Responsive Navbar === */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+@media (max-width: 758px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+@media (max-width: 540px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+.navbar .navbar-nav {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: -100%;
+  background-color: #db0404;
+  width: 30rem;
+  height: 100vh;
+  transition: 0.3s;
+}
+
+.navbar .navbar-nav.active {
+  display: block;
+  right: 0;
+}
+
+/* === Card Section === */
+.content {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  min-height: 100vh;
+  padding: 300px;
+}
+
+.card {
+  position: relative;
+  width: 350px;
+  height: 400px;
+  border-radius: 5em;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profil img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* === Nama + Email di Kiri Bawah === */
+.profil-name {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  color: rgb(18, 17, 17);
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+}

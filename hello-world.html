@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ken - Web Profil 3 Slide</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background: #f5f5f5;
+      }
+
+      nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: #2c3e50;
+        padding: 15px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1000;
+      }
+
+      .logo {
+        font-size: 1.5rem;
+        color: #fff;
+        font-weight: bold;
+        font-style: italic;
+      }
+
+      nav a {
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+
+      nav a:hover {
+        color: #f39c12;
+      }
+
+      section {
+        min-height: 100vh;
+        padding: 120px 40px 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 1s ease;
+      }
+
+      section.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      section:nth-of-type(1) {
+        background-color: #e3f2fd;
+      }
+      section:nth-of-type(2) {
+        background-color: #fce4ec;
+      }
+      section:nth-of-type(3) {
+        background-color: #e0f7fa;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        color: #333;
+      }
+
+      p {
+        max-width: 800px;
+        font-size: 1.2rem;
+        color: #555;
+        line-height: 1.8;
+      }
+
+      .profil-box {
+        margin-bottom: 30px;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+        max-width: 400px;
+      }
+
+      .profil-box img {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 15px;
+      }
+
+      .profil-info p {
+        margin: 8px 0;
+        font-size: 1rem;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <nav>
+      <div class="logo">Profil Khensa</div>
+      <div>
+        <a href="#slide1">Slide 1</a>
+        <a href="#slide2">Slide 2</a>
+        <a href="#slide3">Slide 3</a>
+      </div>
+    </nav>
+
+    <!-- SLIDE 1 -->
+    <section id="slide1">
+      <div class="profil-box">
+        <img
+          src="WhatsApp Image 2025-08-05 at 10.44.26_05195265.jpg"
+          alt="Foto Profil"
+        />
+        <div class="profil-info">
+          <p><strong>Nama:</strong> Khensa Janitra Pratama</p>
+          <p><strong>Email:</strong> khensajanitrapratama@email.com</p>
+        </div>
+      </div>
+      <h1>Langkah Awal</h1>
+      <p>
+        Saya adalah siswa kelas 11 di Telkom Schools Lampung yang memiliki
+        semangat tinggi dalam mengeksplorasi dunia teknologi dan kreativitas
+        digital. Sejak duduk di bangku SMK, saya mulai tertarik dengan hal-hal
+        yang berhubungan dengan desain dan pengembangan web. Bagi saya, dunia
+        teknologi bukan hanya tentang kode atau tampilan layar, tapi tentang
+        bagaimana ide bisa diwujudkan menjadi sesuatu yang nyata. Saya percaya
+        bahwa masa muda adalah waktu terbaik untuk berkembang dan belajar
+        sebanyak mungkin — karena semua keberhasilan dimulai dari langkah kecil
+        yang dilakukan hari ini.
+      </p>
+    </section>
+
+    <!-- SLIDE 2 -->
+    <section id="slide2">
+      <h1>Hari-hari Kreatif</h1>
+      <p>
+        Dalam keseharian, saya suka membuat desain UI, belajar HTML dan CSS,
+        serta menggunakan tools seperti Figma dan Canva untuk mengekspresikan
+        ide saya. Saya juga senang mendengarkan musik, menggambar, dan mencari
+        inspirasi dari internet, terutama lewat YouTube atau media sosial. Saya
+        termasuk orang yang teliti saat membuat karya, tapi tetap terbuka
+        terhadap masukan dan perubahan. Saya suka bekerja sendiri saat butuh
+        fokus, tapi juga bisa bekerja dalam tim dengan baik. Buat saya, belajar
+        itu nggak harus nunggu disuruh — justru lebih seru kalau dimulai dari
+        rasa ingin tahu sendiri.
+      </p>
+    </section>
+
+    <!-- SLIDE 3 -->
+    <section id="slide3">
+      <h1>Mimpi yang Terus Bertumbuh</h1>
+      <p>
+        Saya punya impian untuk menjadi seorang developer dan desainer yang bisa
+        menciptakan sesuatu yang bermanfaat dan punya nilai estetika. Saya ingin
+        membangun proyek-proyek digital seperti website edukasi, aplikasi
+        kreatif, atau platform sederhana yang bisa membantu banyak orang. Saya
+        sadar, perjalanan ini nggak instan — tapi saya siap belajar, mencoba,
+        gagal, dan bangkit lagi. Karena saya yakin, dengan kerja keras, rasa
+        penasaran, dan niat yang kuat, saya bisa berkembang jauh melebihi versi
+        saya yang sekarang. Ini baru permulaan, dan saya siap untuk melangkah
+        lebih jauh.
+      </p>
+    </section>
+
+    <!-- SCRIPT SCROLL ANIMASI -->
+    <script>
+      const sections = document.querySelectorAll("section");
+
+      function revealOnScroll() {
+        const triggerBottom = window.innerHeight * 0.8;
+
+        sections.forEach((section) => {
+          const top = section.getBoundingClientRect().top;
+          if (top < triggerBottom) {
+            section.classList.add("visible");
+          } else {
+            section.classList.remove("visible");
+          }
+        });
+      }
+
+      window.addEventListener("scroll", revealOnScroll);
+      window.addEventListener("load", revealOnScroll);
+    </script>
+  </body>
+</html>
