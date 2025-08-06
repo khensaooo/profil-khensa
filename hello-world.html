@@ -50,7 +50,7 @@
 
       section {
         min-height: 100vh;
-        padding: 120px 40px 80px;
+        padding: 2rem 1rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -68,6 +68,10 @@
 
       section:nth-of-type(1) {
         background-color: #e3f2fd;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: left;
+        gap: 60px;
       }
       section:nth-of-type(2) {
         background-color: #fce4ec;
@@ -89,13 +93,19 @@
         line-height: 1.8;
       }
 
-      .profil-box {
-        margin-bottom: 30px;
+      .slide1-content {
+        flex: 1 1 55%;
+        max-width: 600px;
         background-color: rgba(255, 255, 255, 0.8);
-        padding: 20px;
+        padding: 30px;
         border-radius: 15px;
         box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
-        max-width: 400px;
+      }
+
+      .profil-box {
+        flex: 1 1 30%;
+        max-width: 300px;
+        text-align: center;
       }
 
       .profil-box img {
@@ -124,6 +134,20 @@
 
     <!-- SLIDE 1 -->
     <section id="slide1">
+      <div class="slide1-content">
+        <h1>Langkah Awal</h1>
+        <p>
+          Saya adalah siswa kelas 11 di Telkom Schools Lampung yang memiliki
+          semangat tinggi dalam mengeksplorasi dunia teknologi dan kreativitas
+          digital. Sejak duduk di bangku SMK, saya mulai tertarik dengan hal-hal
+          yang berhubungan dengan desain dan pengembangan web. Bagi saya, dunia
+          teknologi bukan hanya tentang kode atau tampilan layar, tapi tentang
+          bagaimana ide bisa diwujudkan menjadi sesuatu yang nyata. Saya percaya
+          bahwa masa muda adalah waktu terbaik untuk berkembang dan belajar
+          sebanyak mungkin — karena semua keberhasilan dimulai dari langkah
+          kecil yang dilakukan hari ini.
+        </p>
+      </div>
       <div class="profil-box">
         <img
           src="WhatsApp Image 2025-08-05 at 10.44.26_05195265.jpg"
@@ -134,18 +158,6 @@
           <p><strong>Email:</strong> khensajanitrapratama@email.com</p>
         </div>
       </div>
-      <h1>Langkah Awal</h1>
-      <p>
-        Saya adalah siswa kelas 11 di Telkom Schools Lampung yang memiliki
-        semangat tinggi dalam mengeksplorasi dunia teknologi dan kreativitas
-        digital. Sejak duduk di bangku SMK, saya mulai tertarik dengan hal-hal
-        yang berhubungan dengan desain dan pengembangan web. Bagi saya, dunia
-        teknologi bukan hanya tentang kode atau tampilan layar, tapi tentang
-        bagaimana ide bisa diwujudkan menjadi sesuatu yang nyata. Saya percaya
-        bahwa masa muda adalah waktu terbaik untuk berkembang dan belajar
-        sebanyak mungkin — karena semua keberhasilan dimulai dari langkah kecil
-        yang dilakukan hari ini.
-      </p>
     </section>
 
     <!-- SLIDE 2 -->
